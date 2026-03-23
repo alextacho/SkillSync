@@ -1,0 +1,9 @@
+.skillsync/
+.claude/
+.codex/
+.agents/
+playground/.skillsync/
+playground/.claude/
+playground/.codex/
+playground/.agents/
+node_modules/

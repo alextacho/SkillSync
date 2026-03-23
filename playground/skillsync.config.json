@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "sources": {
+    "skills": "skills",
+    "agents": "agents",
+    "commands": "commands"
+  },
+  "providers": {
+    "claude": {
+      "enabled": true,
+      "root": ".claude"
+    },
+    "codex": {
+      "enabled": true,
+      "root": ".codex"
+    },
+    "agents_runtime": {
+      "enabled": true,
+      "root": ".agents"
+    }
+  }
+}

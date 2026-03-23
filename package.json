@@ -1,0 +1,53 @@
+{
+  "name": "skillsync",
+  "version": "0.1.0",
+  "description": "Project-local sync for skills, agents, and slash commands across Claude, Codex, and related agent runtimes.",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "skillsync": "./bin/skillsync.js"
+  },
+  "keywords": [
+    "ai",
+    "agents",
+    "skills",
+    "claude",
+    "codex",
+    "cli",
+    "watch"
+  ],
+  "homepage": "https://github.com/alextacho/skillsync#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alextacho/skillsync.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alextacho/skillsync/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/alextacho"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "node ./bin/skillsync.js build",
+    "watch": "node ./bin/skillsync.js watch",
+    "diff": "node ./bin/skillsync.js diff",
+    "doctor": "node ./bin/skillsync.js doctor",
+    "playground:build": "node ./bin/skillsync.js build --project ./playground",
+    "playground:watch": "node ./bin/skillsync.js watch --project ./playground",
+    "playground:diff": "node ./bin/skillsync.js diff --project ./playground",
+    "playground:doctor": "node ./bin/skillsync.js doctor --project ./playground"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

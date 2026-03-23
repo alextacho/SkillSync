@@ -1,0 +1,116 @@
+{
+  "artifacts": {
+    "agent:poet": {
+      "kind": "agent",
+      "name": "poet",
+      "semanticHash": "acdbc03a42d949470dc22675f752948f5a5d4b15b1be0bb9daffb5a38937a6ed",
+      "outputs": [
+        ".claude/agents/poet/AGENT.md",
+        ".codex/agents/poet/AGENT.md",
+        ".agents/agents/poet/AGENT.md"
+      ]
+    },
+    "command:feeling-poetic": {
+      "kind": "command",
+      "name": "feeling-poetic",
+      "semanticHash": "415f3c65315fa3c13ba254f19fbd33916929ecc3f3d437c863e158fb4d5f0a1d",
+      "outputs": [
+        ".claude/commands/feeling-poetic.md",
+        ".codex/commands/feeling-poetic.md",
+        ".agents/commands/feeling-poetic.md"
+      ]
+    },
+    "command:remix-haiku": {
+      "kind": "command",
+      "name": "remix-haiku",
+      "semanticHash": "db37452c5edecdb6e29e0c1d4eab388a6760a5d27bd173f87d202084ad33d99b",
+      "outputs": [
+        ".claude/commands/remix-haiku.md",
+        ".codex/commands/remix-haiku.md",
+        ".agents/commands/remix-haiku.md"
+      ]
+    },
+    "skill:haiku-drafting": {
+      "kind": "skill",
+      "name": "haiku-drafting",
+      "semanticHash": "cc67b579fe2c974e247e2c7b1590b19db95681560ff6b7d76f119e8406a76db5",
+      "outputs": [
+        ".claude/skills/haiku-drafting/CLAUDE.md",
+        ".codex/skills/haiku-drafting/SKILL.md",
+        ".agents/skills/haiku-drafting/SKILL.md"
+      ]
+    },
+    "skill:haiku-review": {
+      "kind": "skill",
+      "name": "haiku-review",
+      "semanticHash": "a0249dff2fbb894ccdbee7c4e7c653c78da0c8894683fc602b7d6c10b5d747fd",
+      "outputs": [
+        ".claude/skills/haiku-review/CLAUDE.md",
+        ".codex/skills/haiku-review/SKILL.md",
+        ".agents/skills/haiku-review/SKILL.md"
+      ]
+    }
+  },
+  "generatedFiles": {
+    ".claude/agents/poet/AGENT.md": {
+      "artifactId": "agent:poet",
+      "contentHash": "b772b9d9c02b9ee2ef61a3f2c0528e4b13950df37562da14239d4cdb73366e43"
+    },
+    ".codex/agents/poet/AGENT.md": {
+      "artifactId": "agent:poet",
+      "contentHash": "a3709287c3cae66ab614d594863a2ec79a919eeb26dd40dfc4ed65d467742ae3"
+    },
+    ".agents/agents/poet/AGENT.md": {
+      "artifactId": "agent:poet",
+      "contentHash": "a3e73a6359a21a80c0f1ddf897833e65eaf5d58cc9bd6ffaf26782b61592e286"
+    },
+    ".claude/commands/feeling-poetic.md": {
+      "artifactId": "command:feeling-poetic",
+      "contentHash": "5ff195fe29e04d8e96bc049262fccac42e966bb507932447c987d12334498b00"
+    },
+    ".codex/commands/feeling-poetic.md": {
+      "artifactId": "command:feeling-poetic",
+      "contentHash": "295c9c1c09f507542db7842f1db113360fe868c5304c91c2e82186b6838b4b80"
+    },
+    ".agents/commands/feeling-poetic.md": {
+      "artifactId": "command:feeling-poetic",
+      "contentHash": "0046863cae07e1dce2ad3e5616e8d568268473cd9f7ce785d77e8ded802592f1"
+    },
+    ".claude/commands/remix-haiku.md": {
+      "artifactId": "command:remix-haiku",
+      "contentHash": "43ee607a3a94d93be2a74e6e894bdd3d20c353c93f65800cd8e877c448d3b24f"
+    },
+    ".codex/commands/remix-haiku.md": {
+      "artifactId": "command:remix-haiku",
+      "contentHash": "640fd594e68c6086a00cc9b5c15934aa6d913065d89e16b07450651f3222205d"
+    },
+    ".agents/commands/remix-haiku.md": {
+      "artifactId": "command:remix-haiku",
+      "contentHash": "db2594ab7fd04d22a8b36e56bf1d326b8f54d92fcd3649ed374024f9f0f464c2"
+    },
+    ".claude/skills/haiku-drafting/CLAUDE.md": {
+      "artifactId": "skill:haiku-drafting",
+      "contentHash": "3ba634e450703cb9544f7042b09bdd72b3a97a174512ffd8ff11e7d7c9de69a7"
+    },
+    ".codex/skills/haiku-drafting/SKILL.md": {
+      "artifactId": "skill:haiku-drafting",
+      "contentHash": "0cba66eb3b069d137060ccf6586e44e1df7617351da71ee9e20b913992512d47"
+    },
+    ".agents/skills/haiku-drafting/SKILL.md": {
+      "artifactId": "skill:haiku-drafting",
+      "contentHash": "0cba66eb3b069d137060ccf6586e44e1df7617351da71ee9e20b913992512d47"
+    },
+    ".claude/skills/haiku-review/CLAUDE.md": {
+      "artifactId": "skill:haiku-review",
+      "contentHash": "93969858d0de40ca5595032ed4f23a1edd487879a548898c7c21a10aefef0435"
+    },
+    ".codex/skills/haiku-review/SKILL.md": {
+      "artifactId": "skill:haiku-review",
+      "contentHash": "5502ba2df7379a73fe083523e57e68dd3b80cb44d3cea29199f41deeee87121f"
+    },
+    ".agents/skills/haiku-review/SKILL.md": {
+      "artifactId": "skill:haiku-review",
+      "contentHash": "5502ba2df7379a73fe083523e57e68dd3b80cb44d3cea29199f41deeee87121f"
+    }
+  }
+}
