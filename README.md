@@ -8,6 +8,12 @@ It is built for this workflow:
 - run `skillsync watch`
 - immediately test the generated runtime assets in `.claude/`, `.codex/`, and `.agents/`
 
+It also supports a split-source workflow:
+
+- keep canonical sources in one repo or directory
+- point `skillsync` at that source path with `--source`
+- write generated runtime assets into the current directory or another target directory
+
 ## What it does
 
 - Watches canonical source folders: `skills/`, `agents/`, `commands/`
@@ -134,6 +140,30 @@ skillsync doctor --project /path/to/project
 ```
 
 If `--project` is omitted, SkillSync uses the current working directory.
+
+If `--source` is omitted, SkillSync reads source artifacts from the target project root.
+
+## Split-source workflow
+
+Read source artifacts from one path and write generated runtime files into another:
+
+```bash
+skillsync build --source /path/to/skill-library --project /path/to/consumer-project
+skillsync watch --source /path/to/skill-library --project /path/to/consumer-project
+```
+
+Example from inside the consumer project:
+
+```bash
+cd /path/to/consumer-project
+skillsync watch --source /path/to/skill-library
+```
+
+In that mode:
+
+- `skillsync.config.json` is read from the source path
+- `skills/`, `agents/`, and `commands/` are read from the source path
+- `.claude/`, `.codex/`, `.agents/`, `.skillsync/`, and `AGENTS.md` are written to the target path
 
 ## Git ignore
 
