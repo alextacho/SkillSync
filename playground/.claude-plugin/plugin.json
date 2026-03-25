@@ -1,0 +1,5 @@
+{
+  "name": "poetry-lab",
+  "description": "Playground plugin metadata for SkillSync command generation.",
+  "version": "0.1.0"
+}

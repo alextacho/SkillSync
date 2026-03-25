@@ -97,6 +97,7 @@ Write haiku that feel simple, vivid, and deliberate.
 ### Commands
 
 - `commands/*.md` defines one slash command
+- optional `namespace:` prefixes the generated command name for Claude and Codex
 
 Example:
 
@@ -107,6 +108,42 @@ description: Generate a fresh haiku from the current mood or context.
 slash: /feeling-poetic
 ---
 Write a new haiku inspired by the current conversation or environment.
+```
+
+Namespaced example:
+
+```md
+---
+name: addTask
+description: Add a task to ProductOS.
+namespace: pos
+---
+Create a new task in ProductOS.
+```
+
+This generates commands like:
+
+- `.claude/commands/pos:addTask.md`
+- `.codex/commands/pos:addTask.md`
+
+### Claude plugin metadata
+
+If the source root contains:
+
+```text
+.claude-plugin/plugin.json
+```
+
+and that file includes a plugin `name`, SkillSync generates Claude helper commands for each discovered skill using:
+
+```text
+<plugin-name>:<skill-name>
+```
+
+Example:
+
+```text
+.claude/commands/poetry-lab:haiku-drafting.md
 ```
 
 ## Generated output
@@ -128,6 +165,10 @@ It also writes:
 - `.skillsync/state.json`
 - `.codex/COMMANDS.md`
 - `AGENTS.md` managed command hints for Codex
+
+If Claude plugin metadata exists in the source root, SkillSync also writes:
+
+- `.claude/commands/<plugin-name>:<skill-name>.md`
 
 ## Commands
 
